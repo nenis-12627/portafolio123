@@ -1,0 +1,131 @@
+<!DOCTYPE html>6
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundos Virtuales | Portafolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        /* Estilos simples para la galería */
+        .galeria {
+            display: none; /* Oculta la galería al inicio */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .imagen {
+            width: 250px;
+            text-align: center;
+        }
+
+        .imagen img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .imagen p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        /* Estilo del botón */
+        .boton-galeria {
+            display: inline-block;
+            background-color: #ff69b4; /* Rosa bonito */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 15px auto;
+            display: block;
+            width: fit-content;
+            cursor: pointer;
+        }
+
+        .boton-galeria:hover {
+            background-color: #ff85c1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mundos Virtuales</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="paginas.html">Páginas</a>
+        <a href="mundos.html" class="activo">Mundos Virtuales</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <section>
+        <h2>Explora un mundo virtual</h2>
+
+        <!-- Imagen principal -->
+        <img src="img/gafas snoopy.jpeg" alt="Snoopy con gafas de realidad virtual" width="400" style="display:block; margin:auto; border-radius:10px;">
+
+        <p>
+            Los mundos virtuales son espacios digitales que se usan para educación, simulación y entretenimiento.
+        </p>
+
+        <!-- Botón para mostrar la galería -->
+        <button class="boton-galeria" onclick="mostrarGaleria()">Ver galería</button>
+
+        <!-- Galería de tus modelos 3D -->
+        <div id="galeria" class="galeria">
+            <div class="imagen">
+                <img src="img/cuchara.jpeg" alt="Modelo 3D de cuchara">
+                <p>Cuchara modelada en 3D.</p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/mesa.jpeg" alt="Modelo 3D de mesa">
+                <p>Mesa de recepción gym.</p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/muñecos.jpeg" alt="Modelos 3D de muñecos">
+                <p>Muñecos 3D coreano.</p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/palito.jpeg" alt="Modelo 3D de figura simple">
+                <p>Figura sencilla de un juego coreano llamado urilingo.</p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/pan.jpeg" alt="Modelo 3D de pan">
+                <p>Pan de muerto modelado con texturas realistas.</p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/parque.jpeg" alt="Escenario 3D de parque">
+                <p>Un parque con árboles y bancas, ideal para descansar y disfrutar del aire libre.</p>
+            </div>
+
+            <div class="imagen">
+                <img src="img/resepcion.jpeg" alt="Modelo 3D de recepción">
+                <p>Una recepción de gimnasio con mostrador y decoración moderna. Representa el área donde se atiende a los clientes y se da la bienvenida a los usuarios del gym.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Portafolio de Evidencias</p>
+    </footer>
+
+    <script>
+        function mostrarGaleria() {
+            const galeria = document.getElementById("galeria");
+            galeria.style.display = "flex"; // Muestra la galería
+            galeria.scrollIntoView({ behavior: "smooth" }); // Desplaza suavemente hasta las imágenes
+        }
+    </script>
+</body>
+</html>

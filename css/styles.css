@@ -1,0 +1,46 @@
+body {
+  background-color: pink; /* Fondo general */
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+  background-color: #f78fb3; /* rosa pastel fuerte */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #ffb6c1; /* rosa claro */
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white; /* color del texto */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff69b4; /* rosa intenso cuando pasas el mouse */
+}
+
+/* Contenedor de presentación */
+section {
+  background-color: #fff0f5; /* fondo rosita claro */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #f78fb3; /* mismo color del encabezado */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
